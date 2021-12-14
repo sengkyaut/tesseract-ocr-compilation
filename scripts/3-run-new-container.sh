@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker run -d -p 4022:22 --name t4cmp tesseractshadow/tesseract4cmp
-docker ps
+sudo docker run -d -p 2222:22 --name skt4cmp sengkyaut/t4cmp
+sudo docker ps
