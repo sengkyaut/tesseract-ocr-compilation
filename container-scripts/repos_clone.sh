@@ -9,4 +9,4 @@
 git clone ${TES_REPO_URL} ${TES_SRC_DIR}
 
 #MyOCR
-git clone ${MYOCR_URL} ${MYOCR_SRC+DIR}
+git clone ${MYOCR_URL} ${MYOCR_SRC_DIR}

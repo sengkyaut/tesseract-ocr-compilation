@@ -51,12 +51,14 @@ RUN mkdir ${SCRIPTS_DIR}
 RUN mkdir ${PKG_DIR}
 RUN mkdir ${BASE_DIR}
 
-#Might already created after install with apt
-#RUN mkdir ${TESSDATA_PREFIX}
-#RUN ${SCRIPTS_DIR}/tessdata_download.sh
 
 COPY ./container-scripts/* ${SCRIPTS_DIR}/
 RUN chmod +x ${SCRIPTS_DIR}/*
 RUN ${SCRIPTS_DIR}/repos_clone.sh
 
-WORKDIR /home
+#Patching
+COPY ./patch_files/* ${SCRIPTS_DIR}/
+RUN chmod +x ${SCRIPTS_DIR}/*.sh
+RUN ${SCRIPTS_DIR}/start_patch.sh
+
+WORKDIR /root
