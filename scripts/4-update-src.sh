@@ -1,4 +1,3 @@
 #!/bin/bash
 
-docker exec -it t4cmp scripts/repos_update.sh
- 
+sudo docker exec -it skt4cmp scripts/repos_update.sh
