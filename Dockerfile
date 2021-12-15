@@ -41,7 +41,7 @@ ENV PKG_DIR /root/pkg
 ENV BASE_DIR /root/workspace
 ENV LEP_REPO_URL https://github.com/DanBloomberg/leptonica.git
 ENV LEP_SRC_DIR ${BASE_DIR}/leptonica
-ENV TES_REPO_URL https://github.com/tesseract-ocr/tesseract.git
+ENV TES_REPO_URL https://github.com/sengkyaut/tesseract.git
 ENV TES_SRC_DIR ${BASE_DIR}/tesseract
 ENV TESSDATA_PREFIX /usr/share/tesseract-ocr/4.00/tessdata
 ENV MYOCR_URL https://github.com/sengkyaut/MyOCR
