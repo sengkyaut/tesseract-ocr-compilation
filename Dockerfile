@@ -57,8 +57,11 @@ RUN chmod +x ${SCRIPTS_DIR}/*
 RUN ${SCRIPTS_DIR}/repos_clone.sh
 
 #Patching
-COPY ./patch_files/* ${SCRIPTS_DIR}/
-RUN chmod +x ${SCRIPTS_DIR}/*.sh
-RUN ${SCRIPTS_DIR}/start_patch.sh
+#COPY ./patch_files/* ${SCRIPTS_DIR}/
+#RUN chmod +x ${SCRIPTS_DIR}/*.sh
+#RUN ${SCRIPTS_DIR}/start_patch.sh
+
+#Compile
+RUN ${SCRIPTS_DIR}/compile_tesseract.sh
 
 WORKDIR /root
